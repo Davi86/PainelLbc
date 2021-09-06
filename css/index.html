@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Usuário</title>
+
+<!-- Add jQuery basic library -->
+<script type="text/javascript" src="jquery-lib.js"></script>
+<!-- Add required fancyBox files -->
+<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+<!-- Optional, Add fancyBox for media, buttons, thumbs -->
+<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js"></script>
+<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+
+
+</head>
+
+
+
+
+
+
+<body>
+<a class="various" data-fancybox-type="iframe" href="http://localhost/creche/db_cadastro/cadastrar_usuario.php">Show external page using Iframe in a fancybox</a>
+	
+
+<script type="text/javascript">
+$(document).ready(function(){
+		
+	$(".fancybox").fancybox({
+		openEffect  : 'none',
+		closeEffect : 'none',
+		iframe : {
+			preload: false
+		}
+	});
+	
+	
+	
+	$(".various").fancybox({
+		maxWidth	: 800,
+		maxHeight	: 600,
+		fitToView	: false,
+		width		: '70%',
+		height		: '70%',
+		autoSize	: false,
+		closeClick	: false,
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
+	
+	
+	
+	$('.fancybox-media').fancybox({
+		openEffect  : 'none',
+		closeEffect : 'none',
+		helpers : {
+			media : {}
+		}
+	});
+});
+</script>
+
+	
+	
+</body>
+</html>

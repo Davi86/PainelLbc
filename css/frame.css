@@ -1,0 +1,12 @@
+﻿$(document).ready(function(){
+ $('.glossymenu').click(function(){
+  $(parent.bottom_frame.document).contents().find('.glossymenu').toggle();
+ });
+ 
+ $(document).click(function(event){
+        if( $(event.target).hasClass("home") )
+        { return; }
+          
+        $(parent.bottom_frame.document).contents().find('.glossymenu').hide();
+    });
+}); 
